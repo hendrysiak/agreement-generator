@@ -1,0 +1,111 @@
+:root {
+  font-family: Inter, Segoe UI, Arial, sans-serif;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f8;
+  color: #1f2933;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 4px;
+}
+
+.description {
+  margin-top: 0;
+  color: #4b5563;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #d7dde4;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  padding: 8px 10px;
+}
+
+.instructionList {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.mappingTable {
+  display: grid;
+  gap: 8px;
+}
+
+.mappingHeader,
+.mappingRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.mappingHeader {
+  font-weight: 600;
+  border-bottom: 1px solid #e3e8ee;
+  padding-bottom: 4px;
+}
+
+.fieldName {
+  word-break: break-word;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+button {
+  border: 1px solid #8aa2c0;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+
+button:hover:enabled {
+  background: #eff4fa;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status {
+  color: #17663a;
+}
+
+.error {
+  color: #8b1c1c;
+}
